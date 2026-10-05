@@ -1,0 +1,1 @@
+import Link from 'next/link'; export default function LegalPage({title,children}:{title:string;children:React.ReactNode}){return <main className="container" style={{maxWidth:760}}><div className="card"><h1 className="title">{title}</h1><div className="muted" style={{lineHeight:1.8}}>{children}</div><Link className="btn" href="/">Back to Home</Link></div></main>}

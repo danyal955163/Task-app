@@ -1,28 +1,18 @@
-# CashCoin Task App
+# CashCoin / Task-app
 
-Modern CashCoin task-earning application with a Next.js App Router foundation and Supabase integration.
+Complete Next.js 14 App Router foundation for the CashCoin task platform, built in `src/` with the existing Supabase project and RPC names. No schema or RPC is created or modified.
 
-## Included
-
-- Modern responsive landing page and dashboard shell
-- Supabase browser/server clients and auth middleware
-- Login/signup routes using Supabase Auth
-- Real profile, broadcast and notification queries
-- User routes for tasks, free tasks, wallet, withdrawal, profile, packages, deposit, referral, help and notifications
-- Admin routes for deposits, withdrawals, tasks, task history, users, broadcast, support and settings
-- OpenRouter-backed support chat and AI-review API endpoints
-- Existing static design preserved at `public/design-reference.html`
-
-## Environment
-
-Copy `.env.local.example` to `.env.local` and fill the existing Vercel/Supabase values. **No database schema or RPC is created or changed by this app.**
-
-## Run
+## Setup
 
 ```bash
 npm install
+cp .env.local.example .env.local
 npm run build
 npm run dev
 ```
 
-The app expects the existing Supabase tables and RPCs listed in the product prompt.
+Fill the existing Supabase/OpenRouter values in `.env.local` or the deployment environment. The original single-file visual design is preserved at `public/design-reference.html`.
+
+## Connected areas
+
+Auth middleware, Supabase Auth login/signup, profile/dashboard/broadcast/notification queries, task/wallet/withdrawal/package routes, admin route structure, support chat, AI review and email API endpoints are included. The app uses the existing tables and RPCs described in the product prompts.

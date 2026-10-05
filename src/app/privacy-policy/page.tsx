@@ -1,0 +1,1 @@
+import LegalPage from '../legal-page'; export default function Privacy(){return <LegalPage title="Privacy Policy"><p>We only use account and payment information to operate CashCoin services. We do not sell personal data.</p></LegalPage>}

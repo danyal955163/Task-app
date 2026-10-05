@@ -1,0 +1,1 @@
+import LegalPage from '../legal-page'; export default function FAQ(){return <LegalPage title="FAQ"><p><b>Minimum withdrawal:</b> configured by the existing site_settings row. <br/><b>Payment time:</b> withdrawals are reviewed through the existing RPC workflow.</p></LegalPage>}

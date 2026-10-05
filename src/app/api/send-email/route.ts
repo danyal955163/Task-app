@@ -1,0 +1,2 @@
+import nodemailer from 'nodemailer';
+export async function POST(request:Request){const {to,subject,text}=await request.json(); const host=process.env.BREVO_SMTP_HOST; if(!host)return Response.json({sent:false,reason:'SMTP is not configured'}); const transporter=nodemailer.createTransport({host,port:Number(process.env.BREVO_SMTP_PORT||587),secure:false,auth:{user:process.env.BREVO_SMTP_USER,pass:process.env.BREVO_SMTP_PASSWORD}}); await transporter.sendMail({from:process.env.BREVO_FROM_EMAIL||'noreply@cashcoin.pk',to,subject,text}); return Response.json({sent:true});}
