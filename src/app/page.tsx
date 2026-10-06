@@ -1,2 +1,8 @@
-import Link from 'next/link';
-export default function Home(){return <main className="container"><section className="hero"><span className="pill">Live: 1,247 users earning now</span><h1 className="title" style={{color:'#fff',marginTop:18}}>Earn Real Money in Pakistan</h1><p>Complete simple tasks. Withdraw via JazzCash. No investment needed to start.</p><div className="row" style={{justifyContent:'flex-start',marginTop:20}}><Link className="btn secondary" href="/signup">Sign Up Free</Link><Link className="btn" href="/login">Login</Link></div></section><section className="grid grid4" style={{marginTop:20}}>{[['100% Free to Join','No hidden fees'],['Daily Payouts','JazzCash & EasyPaisa'],['Trusted by 10K+','Real users'],['24/7 Support','We are here to help']].map(([a,b])=><div className="card" key={a}><b>{a}</b><p className="muted">{b}</p></div>)}</section><section className="card" style={{marginTop:20}}><h2>How it Works</h2><div className="grid grid3">{['Sign Up Free','Complete Tasks','Withdraw Money'].map((x,i)=><div key={x}><span className="pill">{i+1}</span><h3>{x}</h3><p className="muted">Simple, transparent and built for Pakistan.</p></div>)}</div></section></main>}
+export default function Home() {
+  return (
+    <div style={{padding: '40px', fontFamily: 'Arial'}}>
+      <h1>TEST OK</h1>
+      <p>Page works</p>
+    </div>
+  );
+}
